@@ -1,5 +1,9 @@
-# Setup SmartThings repos as projects in Checkmarx for static code security scanning
+# SmartThings Secure SDLC project
 
-### Lambda function name running currently in Security Lab AWS account: `setup_github_sca`
+## Github
+* Lambda function name running currently in Security Lab AWS account: `setup_github_sca`
+* Lambda config: https://smartthings.atlassian.net/wiki/spaces/ISP/pages/398721097/Lambda+Config
 
-### Lambda config: https://smartthings.atlassian.net/wiki/spaces/ISP/pages/398721097/Lambda+Config
+## Gitlab
+* CI/CD config: `.gitlab-ci.yml`
+* CI/CD scan script: `gitlab-ci.py`
