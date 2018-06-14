@@ -1,0 +1,8 @@
+security_scan:
+  tags:
+    - streleng
+  image:  smartthings-docker-build.jfrog.io/releng/build-common:latest
+  before_script:
+    - pip install -r requirements.txt
+  script:
+    - python scan.py --repo_name=$CI_PROJECT_NAME --username=$CxUSER --password=$CxPASS
