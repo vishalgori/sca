@@ -1,4 +1,4 @@
-# SmartThings Secure SDLC project
+# Secure SDLC
 
 ## Github
 * Lambda function name running currently in Security Lab AWS account: `setup_github_sca`
