@@ -1,9 +1,11 @@
-# Secure SDLC
+### Integrated Static Code Analysis including Open Source Analysis using Gitlab CI/CD
 
-## Github
-* Lambda function name running currently in Security Lab AWS account: `setup_github_sca`
-* Lambda config: https://smartthings.atlassian.net/wiki/spaces/ISP/pages/398721097/Lambda+Config
-
-## Gitlab
-* CI/CD config: `.gitlab-ci.yml`
-* CI/CD scan script: `gitlab-ci.py`
+## Pre-requisites
+* Run setup script to create new projects and add source control for them in Checkmarx
+* Add user credentials to Gitlab CI secret variables for Checkmarx authentication as CxUSER and CxPASS
+* Edit gitlab-ci.yml to include below config post build in any Dev stage:
+```
+    script:
+        - ./scan.sh
+```
+# P.S. Integration tested for build using gradle. Requires a separate task in gradle config to download dependencies (Edit scan.sh depending on your project structure).
