@@ -1,4 +1,4 @@
-### Integrated Static Code Analysis including Open Source Analysis using Gitlab CI/CD
+# Integrated Static Code Analysis including Open Source Analysis using Gitlab CI/CD
 
 ## Pre-requisites
 * Run setup script to create new projects and add source control for them in Checkmarx
@@ -8,4 +8,4 @@
     script:
         - ./scan.sh
 ```
-# P.S. Integration tested for build using gradle. Requires a separate task in gradle config to download dependencies (Edit scan.sh depending on your project structure).
+### P.S. Integration tested for build using gradle. Requires a separate task in gradle config to download dependencies (Edit scan.sh depending on your project structure).
